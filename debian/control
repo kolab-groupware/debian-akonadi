@@ -8,7 +8,7 @@ Uploaders: Sune Vuorela <debian@pusling.com>,
            Maximiliano Curia <maxy@debian.org>
 Build-Depends: automoc,
                cmake (>= 2.8.8),
-               debhelper (>= 9),
+               debhelper (>= 8),
                libboost-program-options-dev,
                libdbus-1-dev,
                libmysqlclient-dev,
