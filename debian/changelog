@@ -1,3 +1,9 @@
+akonadi (1.12.42.0-0~kolab1) unstable; urgency=medium
+
+  * Release 1.12.42.0
+
+ -- Jeroen van Meeuwen <vanmeeuwen@kolabsys.com>  Mon, 29 Dec 2014 12:12:12 +0100
+
 akonadi (1.12.1-1) unstable; urgency=medium
 
   * New upstream release.
