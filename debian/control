@@ -13,8 +13,7 @@ Build-Depends: automoc,
                libdbus-1-dev,
                libmysqlclient-dev,
                libqt4-dev (>= 4:4.8.0),
-               libsoprano-dev (>= 2.7.56),
-               libsqlite3-dev (>= 3.6.23),
+               libsoprano-dev (>= 2.7.5),
                libxslt-dev,
                mysql-server-core,
                pkg-kde-tools (>= 0.12),
@@ -29,12 +28,11 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-req/akonadi.git
 Package: akonadi-server
 Section: net
 Architecture: any
-Depends: akonadi-backend-mysql (= ${source:Version}) | akonadi-backend-sqlite (= ${binary:Version}) | akonadi-backend-postgresql (= ${source:Version}),
+Depends: akonadi-backend-mysql (= ${source:Version}) | akonadi-backend-postgresql (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Suggests: akonadi-backend-mysql (= ${source:Version}),
-          akonadi-backend-postgresql (= ${source:Version}),
-          akonadi-backend-sqlite (= ${binary:Version})
+          akonadi-backend-postgresql (= ${source:Version})
 Description: Akonadi PIM storage service
  Akonadi is an extensible cross-desktop Personal Information Management (PIM)
  storage service. It provides a common framework for applications to store and
@@ -105,25 +103,6 @@ Description: PostgreSQL storage backend for Akonadi
  PostgreSQL as underlying data storage engine. By default, a local PostgreSQL
  server instance will be started for each user. Alternatively, connection to an
  external PostgreSQL database is supported as well.
-
-Package: akonadi-backend-sqlite
-Section: misc
-Architecture: any
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Recommends: akonadi-server
-Description: SQLite storage backend for Akonadi
- Akonadi is an extensible cross-desktop Personal Information Management (PIM)
- storage service. It provides a common framework for applications to store and
- access mail, calendars, addressbooks, and other PIM data.
- .
- This package installs everything what's needed for Akonadi to work with SQLite
- as underlying data storage engine. Since SQLite is an embedded database
- engine, a separate SQL server daemon is not necessary.
- .
- In addition, the package contains an improved QSql driver for SQLite named
- "QSQLite3". It can be used by any application that needs to access SQLite
- databases via standard Qt QSql framework.
 
 Package: akonadi-dbg
 Section: debug
