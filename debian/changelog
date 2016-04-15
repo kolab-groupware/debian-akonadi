@@ -1,3 +1,9 @@
+akonadi (1.12.42.4-0~kolab1) unstable; urgency=medium
+
+  * New upstream release 1.12.42.4
+
+ -- Christian Mollekopf (Kolab Systems) <mollekopf@kolabsys.com>  Thu, 14 Apr 2016 10:13:55 +0200
+
 akonadi (1.12.42.3-0~kolab1) unstable; urgency=medium
 
   * New upstream release 1.12.42.3
