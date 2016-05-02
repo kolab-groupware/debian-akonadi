@@ -1,3 +1,9 @@
+akonadi (1.12.42.7-0~kolab1) unstable; urgency=medium
+
+  * New upstream release 1.12.42.7
+
+ -- Sandro Knauß (Kolab Systems) <knauss@kolabsys.com>  Mon, 02 May 2016 10:28:25 +0000
+
 akonadi (1.12.42.6-0~kolab1) unstable; urgency=medium
 
   * New upstream release 1.12.42.6
